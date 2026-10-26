@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "version": 2,
+  "generatedAt": "2026-10-24",
+  "euMembers": [
+    "AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GR", "HR", "HU",
+    "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK"
+  ],
+  "regimes": {
+    "EU": {
+      "status": "VERIFIED",
+      "verifiedOn": "2026-10-18",
+      "rules": {
+        "legalGuarantee": { "months": 24, "from": "DELIVERY", "liable": "SELLER",
+                            "basis": "Directive (EU) 2019/771, art. 10(1)" },
+        "presumption": { "monthsNew": 12, "monthsUsed": 12,
+                         "basis": "Directive (EU) 2019/771, art. 11(1)" },
+        "usedGoodsMinMonths": 12,
+        "distanceWithdrawalDays": 14,
+        "repairExtension": []
+      },
+      "pendingChanges": [
+        {
+          "field": "repairExtension",
+          "add": { "months": 12, "once": true, "purchasedOnOrAfter": "2026-07-31",
+                   "basis": "Directive (EU) 2019/771, art. 10(2a), inserted by Directive (EU) 2024/1799, art. 16" },
+          "trigger": "Each country's transposition of Directive (EU) 2024/1799 (for sales contracts concluded from 31 July 2026, art. 21)",
+          "watch": "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32024L1799"
+        }
+      ],
+      "letter": { "languages": ["en"] },
+      "citation": {
+        "en": { "basis": "Directive (EU) 2019/771 on certain aspects concerning contracts for the sale of goods, as transposed into national law" }
+      },
+      "escalation": [],
+      "sources": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0771",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024L1799"
+      ]
+    }
+  },
+  "countries": {
+    "FR": {
+      "regime": "EU",
+      "status": "VERIFIED",
+      "verifiedOn": "2026-10-18",
+      "checkedOn": "2026-10-18",
+      "overrides": {
+        "legalGuarantee": { "months": 24, "from": "DELIVERY", "liable": "SELLER",
+                            "basis": "Code de la consommation, art. L217-3" },
+        "presumption": { "monthsNew": 24, "monthsUsed": 12,
+                         "basis": "Code de la consommation, art. L217-7" },
+        "usedGoodsMinMonths": 24,
+        "sellerDeadlineDays": 30,
+        "repairExtension": [
+          { "months": 6, "once": true, "purchasedOnOrAfter": "2022-01-01",
+            "basis": "Code de la consommation, art. L217-13" }
+        ],
+        "replacementAfterFailedRepair": { "renewsFullPeriod": true,
+                                          "basis": "Code de la consommation, art. L217-13" },
+        "suspension": { "from": "REQUEST_OR_HANDOVER", "alsoDuringNegotiation": true,
+                        "basis": "Code de la consommation, art. L217-28" },
+        "limitation": { "months": 60, "from": "DISCOVERY",
+                        "basis": "Code de la consommation, art. L217-3; Code civil, art. 2224" }
+      },
+      "legacy": [],
+      "pendingChanges": [
+        {
+          "field": "repairExtension",
+          "add": { "months": 12, "once": true, "purchasedOnOrAfter": "2026-07-31",
+                   "basis": "French transposition of Directive (EU) 2024/1799" },
+          "trigger": "French transposition of Directive (EU) 2024/1799: not in the Code de la consommation as of 10 Oct 2026 (L217-13 still says six months)",
+          "watch": "https://www.service-public.gouv.fr/particuliers/actualites/A19033"
+        }
+      ],
+      "info": {
+        "hiddenDefects": { "months": 24, "from": "DISCOVERY", "maxYearsFromSale": 20,
+                           "basis": "Code civil, art. 1641 et 1648" },
+        "repairBonus": { "name": "Bonus réparation (QualiRépar)", "minRepairEur": 15,
+                         "onlyOutOfWarranty": true,
+                         "amountsEur": { "LARGE_APPLIANCE": 60, "COMPUTER_TABLET": 45,
+                                         "SMARTPHONE": 25, "TV": 30 },
+                         "amountsVerifiedOn": null }
+      },
+      "receiptSignals": ["garantie légale de conformité", "garantie legale de conformite"],
+      "letter": { "languages": ["fr"] },
+      "escalation": ["MEDIATEUR", "SIGNALCONSO", "CONCILIATEUR"],
+      "citation": {
+        "fr": { "basis": "articles L217-3 et suivants du Code de la consommation",
+                "presumption": "article L217-7", "freeOfCharge": "article L217-11",
+                "deadline": "article L217-10",
+                "repairExtension": "article L217-13 du Code de la consommation",
+                "suspension": "article L217-28 du Code de la consommation" }
+      },
+      "citationToVerify": [],
+      "sources": [
+        "https://codes.droit.org/PDF/Code%20de%20la%20consommation.pdf",
+        "https://codes.droit.org/PDF/Code%20civil.pdf",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000044142474/",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F11094"
+      ]
+    },
+    "BE": {
+      "regime": "EU",
+      "status": "VERIFIED",
+      "verifiedOn": "2026-10-18",
+      "checkedOn": "2026-10-18",
+      "overrides": {
+        "legalGuarantee": { "months": 24, "from": "DELIVERY", "liable": "SELLER",
+                            "basis": "Ancien Code civil, art. 1649quater, § 1er" },
+        "presumption": { "monthsNew": 24, "monthsUsed": 24,
+                         "basis": "Ancien Code civil, art. 1649quater, § 4" },
+        "usedGoodsMinMonths": 12,
+        "usedGoodsReductionRequiresNotice": true,
+        "notifyWithinMonthsOfDiscovery": 2,
+        "suspension": { "from": "HANDOVER", "alsoDuringNegotiation": true,
+                        "basis": "Ancien Code civil, art. 1649quater, § 1er, al. 3" },
+        "limitation": { "months": 12, "from": "DISCOVERY", "notBeforeGuaranteeEnd": false,
+                        "basis": "Ancien Code civil, art. 1649quater, § 3" },
+        "repairExtension": []
+      },
+      "legacy": [
+        {
+          "purchasedBefore": "2022-06-02",
+          "note": "Contracts concluded until 1 June 2022: the law of 20 March 2022 applies only to contracts concluded after its entry into force (arts. 24 and 26).",
+          "overrides": {
+            "presumption": { "monthsNew": 6, "monthsUsed": 6,
+                             "basis": "Ancien Code civil, art. 1649quater, § 4 (loi du 1er septembre 2004)" },
+            "usedGoodsReductionRequiresNotice": false,
+            "notifyWithinMonthsOfDiscovery": null,
+            "limitation": { "months": 12, "from": "DISCOVERY", "notBeforeGuaranteeEnd": true,
+                            "basis": "Ancien Code civil, art. 1649quater, § 3 (loi du 1er septembre 2004)" }
+          }
+        }
+      ],
+      "pendingChanges": [
+        {
+          "field": "repairExtension",
+          "add": { "months": 12, "once": true, "purchasedOnOrAfter": "2026-10-04",
+                   "basis": "Loi du 22 juillet 2026, art. 14 (ancien Code civil, art. 1649quater, § 1er)" },
+          "trigger": "Law of 22 July 2026 (Moniteur belge of 23 Sep 2026), art. 14, reported in force on 3 Oct 2026 for contracts concluded after that date: to confirm in the Moniteur belge's text",
+          "watch": "https://www.ejustice.just.fgov.be"
+        },
+        {
+          "field": "limitation",
+          "replace": { "months": 24, "from": "NOTIFICATION", "maxMonthsFromDelivery": 123,
+                       "purchasedOnOrAfter": "2027-09-01",
+                       "basis": "Code civil, art. 7.2.52 et 7.2.34" },
+          "trigger": "Book 7 of the Civil Code (law of 22 July 2026), in force on 1 Sep 2027: to confirm in the Moniteur belge's text",
+          "watch": "https://www.ejustice.just.fgov.be"
+        }
+      ],
+      "letter": { "languages": ["fr", "nl"] },
+      "escalation": ["CONSUMER_MEDIATION_SERVICE", "POINT_DE_CONTACT"],
+      "citation": {
+        "fr": { "basis": "articles 1649bis à 1649nonies de l’ancien Code civil" },
+        "nl": { "basis": "artikelen 1649bis tot 1649nonies van het oud Burgerlijk Wetboek" }
+      },
+      "citationToVerify": [],
+      "sources": [
+        "https://etaamb.openjustice.be/fr/loi-du-01-septembre-2004_n2004011364.html",
+        "https://etaamb.openjustice.be/fr/loi-du-20-mars-2022_n2022031422.html",
+        "https://www.ejustice.just.fgov.be/eli/loi/2022/03/20/2022031422/justel",
+        "https://www.droitbelge.be/news_detail.asp?id=1195"
+      ]
+    },
+    "ES": {
+      "regime": "EU",
+      "status": "VERIFIED",
+      "verifiedOn": "2026-10-18",
+      "checkedOn": "2026-10-18",
+      "overrides": {
+        "legalGuarantee": { "months": 36, "from": "DELIVERY", "liable": "SELLER",
+                            "basis": "TRLGDCU, art. 120.1" },
+        "digitalContentMonths": 24,
+        "presumption": { "monthsNew": 24, "monthsUsed": 24,
+                         "basis": "TRLGDCU, art. 121.1" },
+        "usedGoodsMinMonths": 12,
+        "suspension": { "from": "HANDOVER", "alsoDuringNegotiation": false,
+                        "basis": "TRLGDCU, art. 122.1 y 122.2" },
+        "postRepairLiabilityMonths": 12,
+        "limitation": { "months": 60, "from": "MANIFESTATION",
+                        "basis": "TRLGDCU, art. 124" },
+        "directProducerClaim": { "when": "SELLER_IMPOSSIBLE_OR_EXCESSIVE",
+                                 "basis": "TRLGDCU, art. 125.1" },
+        "repairExtension": []
+      },
+      "legacy": [
+        {
+          "purchasedBefore": "2022-01-01",
+          "note": "Contracts concluded before 2022: Real Decreto-ley 7/2021 changed these articles from 1 January 2022, and Directive (EU) 2019/771 doesn't apply to earlier contracts (art. 24).",
+          "overrides": {
+            "legalGuarantee": { "months": 24, "from": "DELIVERY", "liable": "SELLER",
+                                "basis": "TRLGDCU, art. 123.1 (hasta el 31 de diciembre de 2021)" },
+            "presumption": { "monthsNew": 6, "monthsUsed": 6,
+                             "basis": "TRLGDCU, art. 123.1 (hasta el 31 de diciembre de 2021)" },
+            "postRepairLiabilityMonths": 6,
+            "limitation": { "months": 36, "from": "DELIVERY",
+                            "basis": "TRLGDCU, art. 123.4 (hasta el 31 de diciembre de 2021)" }
+          }
+        }
+      ],
+      "pendingChanges": [
+        {
+          "field": "repairExtension",
+          "add": { "months": 12, "once": true, "purchasedOnOrAfter": "2026-07-31",
+                   "basis": "Spanish transposition of Directive (EU) 2024/1799" },
+          "trigger": "Spanish transposition of Directive (EU) 2024/1799: only a draft law (Ley de Consumo Sostenible); not in the TRLGDCU as last consolidated on 28 Feb 2026",
+          "watch": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555"
+        }
+      ],
+      "letter": { "languages": ["es"] },
+      "escalation": ["HOJA_DE_RECLAMACIONES", "OMIC", "JUNTA_ARBITRAL_CONSUMO"],
+      "citation": {
+        "es": { "basis": "artículos 114 y siguientes del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios (Real Decreto Legislativo 1/2007)",
+                "period": "artículo 120", "presumption": "artículo 121", "remedy": "artículo 118",
+                "suspension": "artículo 122" }
+      },
+      "citationToVerify": [],
+      "sources": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555",
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6872",
+        "https://portal-cec.consumo.gob.es/es/informacion-general/compras-online/garantias"
+      ]
+    }
+  },
+  "escalationRoutes": {
+    "MEDIATEUR": { "name": { "fr": "Médiateur de la consommation" } },
+    "SIGNALCONSO": { "name": { "fr": "SignalConso" }, "url": "https://signal.conso.gouv.fr" },
+    "CONCILIATEUR": { "name": { "fr": "Conciliateur de justice" }, "url": "https://www.conciliateurs.fr" },
+    "CONSUMER_MEDIATION_SERVICE": {
+      "name": { "fr": "Service de médiation pour le consommateur", "nl": "Consumentenombudsdienst" },
+      "url": { "fr": "https://mediationconsommateur.be", "nl": "https://consumentenombudsdienst.be" }
+    },
+    "POINT_DE_CONTACT": {
+      "name": { "fr": "Point de contact", "nl": "Meldpunt" },
+      "url": { "fr": "https://pointdecontact.belgique.be", "nl": "https://meldpunt.belgie.be" }
+    },
+    "HOJA_DE_RECLAMACIONES": { "name": { "es": "Hoja de reclamaciones" } },
+    "OMIC": { "name": { "es": "Oficina Municipal de Información al Consumidor (OMIC)" } },
+    "JUNTA_ARBITRAL_CONSUMO": { "name": { "es": "Junta Arbitral de Consumo" } }
+  },
+  "categories": {
+    "WASHING_MACHINE": { "group": "LARGE_APPLIANCE" },
+    "DRYER": { "group": "LARGE_APPLIANCE" },
+    "DISHWASHER": { "group": "LARGE_APPLIANCE" },
+    "FRIDGE_FREEZER": { "group": "LARGE_APPLIANCE" },
+    "OVEN_COOKTOP": { "group": "LARGE_APPLIANCE" },
+    "MICROWAVE": { "group": "LARGE_APPLIANCE" },
+    "WATER_HEATER": { "group": "LARGE_APPLIANCE" },
+    "HEATING_COOLING": { "group": "LARGE_APPLIANCE" },
+    "VACUUM": { "group": "SMALL_APPLIANCE" },
+    "COFFEE_MACHINE": { "group": "SMALL_APPLIANCE" },
+    "KITCHEN_APPLIANCE": { "group": "SMALL_APPLIANCE" },
+    "PERSONAL_CARE": { "group": "SMALL_APPLIANCE" },
+    "HOME_APPLIANCE": { "group": "SMALL_APPLIANCE" },
+    "SMARTPHONE": { "group": "PHONE_COMPUTER" },
+    "TABLET": { "group": "PHONE_COMPUTER" },
+    "COMPUTER": { "group": "PHONE_COMPUTER" },
+    "MONITOR": { "group": "PHONE_COMPUTER" },
+    "PRINTER": { "group": "PHONE_COMPUTER" },
+    "WEARABLE": { "group": "PHONE_COMPUTER" },
+    "TV": { "group": "TV_AUDIO_PHOTO" },
+    "AUDIO": { "group": "TV_AUDIO_PHOTO" },
+    "CAMERA": { "group": "TV_AUDIO_PHOTO" },
+    "GAME_CONSOLE": { "group": "TV_AUDIO_PHOTO" },
+    "FURNITURE": { "group": "HOME_GARDEN" },
+    "BEDDING": { "group": "HOME_GARDEN" },
+    "DIY_TOOL": { "group": "HOME_GARDEN" },
+    "GARDEN": { "group": "HOME_GARDEN" },
+    "BIKE_SCOOTER": { "group": "HOME_GARDEN" },
+    "OTHER": { "group": "OTHER" }
+  }
+}
